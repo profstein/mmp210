@@ -16,6 +16,9 @@ Office S622C
 Office Hours  
 Monday, Wednesday, Thursday 4pm - 5pm  
 
+Course site: [github.com/owenroberts/mmp210/](https://github.com/owenroberts/mmp210/)
+
+
 ###Course Description
 
 This course introduces the basic concepts of programming for multimedia.  Students will learn the principles of object oriented programming and how to create scripts for the manipulation of video, graphics, and text to construct a complete multimedia presentation.

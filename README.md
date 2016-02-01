@@ -90,3 +90,4 @@ Week1: Intro to JavaScript, p5.js
 - p5.js
 - HTML/CSS/JavaScript
 - Cartesian coordinates and screen coordinates
+- [Class notes](https://owenroberts.github.io/mmp210/week1/)

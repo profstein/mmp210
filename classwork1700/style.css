@@ -37,3 +37,4 @@ ul li:hover ul {
     margin: 0 auto;
 }
 img { width:300px; }
+canvas { border:1px solid green; }

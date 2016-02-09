@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+	<title>MMP 210 - Week 1</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="../slides/slides.css" type="text/css" />
+	<link rel="stylesheet" href="../slides/highlight/github-gist.css" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="../slides/slides.js"></script>
+	<script src="../slides/highlight/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<style>
+		.slides .slide {
+			background: linear-gradient(to bottom, #B175FD 0%,#ee91e3 80%,lightblue 100%);
+		}
+		code, pre {
+			color:darkblue;
+			background:#f9f9f9;
+			padding:0.1em 0.25em;
+			border-radius: 0.2em;
+			/*border:1px solid blue;*/
+		}
+	</style>
+</head>
+<body>
+	<div id="container" class="slides language-js">
+		<div class="slide">
+			<h1>JavaScript statements and operators</h1>
+		</div>
+
+		<div class="slide">
+			<h2>Syntax basics</h2>
+			<p>A simple statment.</p>
+			<pre><code>var s = "hello world";</code></pre>
+			<p>We can ignore <code>whitespace</code> (except for inside the quotation marks).</p>
+			<pre><code>var x =         " hello world ! ";</code></pre>
+			<p>The <code>=</code> sign is for assigning values.</p>
+			<p>x "gets" 10</p>
+		</div>
+
+		<div class="slide">
+			<h2>Operators</h2>
+			<p>Add and subtract</p>
+			<pre><code>var x = 10;
+var y = 20;
+x + y;
+x - 5;
+y + 5 - x;
+x - (y + 5);</code></pre>
+		</div>
+
+		<div class="slide">
+			<p>Multiply and divide</p>
+			<pre><code>2 * 2;
+2 / 3;</code></pre>
+		</div>
+
+		<div class="slide">
+			<p>Concatenation</p>
+			<pre><code>var h = "hello";
+var w = "world";
+x + w;
+"hello" + "world";
+"hello " + "world";</code></pre>
+		</div>
+
+		<div class="slide">
+			<p>Increment, decrement</p>
+			<pre><code>var x = 0;
+x++;
+x += 10;
+var y = ++x;
+var z = x++;
+x--;
+x -= 5;</code></pre>
+		</div>
+
+		<div class="slide">
+			<p>Addition vs. concatenation</p>
+			<pre><code>var x = 1;
+var y = "7";
+x + y;
+typeof x + y;
+y + x;
+x + +y;
+x + Number(y);</code></pre>
+		</div>
+
+		<!--  assignment use operators to change color -->
+		
+	</div>
+</body>
+</html>

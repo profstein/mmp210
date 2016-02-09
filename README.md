@@ -84,7 +84,7 @@ For MMP and MMA tutoring, please visit BMCC's [tutoring schedule](http://www.bmc
 
 ###Schedule
 
-Week1: Intro to JavaScript, p5.js
+**Week 1: Intro to JavaScript, p5.js**
 - HTML5
 - JavaScript
 - p5.js
@@ -92,3 +92,7 @@ Week1: Intro to JavaScript, p5.js
 - Cartesian coordinates and screen coordinates
 - [HTML / CSS Review notes](https://owenroberts.github.io/mmp210/week1/index.html)
 - [Intro to p5](https://owenroberts.github.io/mmp210/week1/p5.html)
+
+**Week 2: Statement and operators**
+- JavaScript statements and operators
+- p5 color, stroke and fill  

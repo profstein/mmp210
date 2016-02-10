@@ -13,6 +13,13 @@
 		.slides .slide {
 			background: linear-gradient(to bottom, #B175FD 0%,#ee91e3 80%,lightblue 100%);
 		}
+		.key {
+			color:black;
+			background-color:white;
+			display:inline-block;
+			padding:0.25em;
+			border-radius: 0.1em;
+		}
 	</style>
 </head>
 <body>
@@ -22,11 +29,17 @@
 		</div>
 
 		<div class="slide">
+			<p>Let's start by opening the JavaScript console (in Google Chrome).</p>
+			<div class="key">CAj</div>
+			<p>We're going to add a series of commands and see what happens.</p>
+		</div>
+
+		<div class="slide">
 			<h2>Syntax basics</h2>
 			<p>A simple statment.</p>
-			<pre><code>var s = "hello world";</code></pre>
+			<pre><code><c></c>var s = "hello world";</code></pre>
 			<p>We can ignore <code>whitespace</code> (except for inside the quotation marks).</p>
-			<pre><code>var x =         " hello world ! ";</code></pre>
+			<pre><code><c></c>var x =         " hello world ! ";</code></pre>
 			<p>The <code>=</code> sign is for assigning values.</p>
 			<p>x "gets" 10</p>
 		</div>
@@ -34,49 +47,57 @@
 		<div class="slide">
 			<h2>Operators</h2>
 			<p>Add and subtract</p>
-			<pre><code>var x = 10;
-var y = 20;
-x + y;
-x - 5;
-y + 5 - x;
-x - (y + 5);</code></pre>
+			<pre><code><c></c>var x = 10;
+<c></c>var y = 20;
+<c></c>x + y;
+<c></c>x - 5;
+<c></c>y + 5 - x;
+<c></c>x - (y + 5);</code></pre>
+		</div>
+
+		<div class="slide">
+			<p>But wait, what is that <code>var</code> thing, and what are those functions??</p>
+			<p>In Javascript, every variable is declared as <code>var</code> regardless of what type of information it holds.  Soon we will discuss datatypes as they relate to JavaScript.  JavaScript only works with a few basic variable types: numbers, strings and booleans, along with arrays and objects and functions, which can all be declared with <code>var</code>. </p>
+			<p>Variables in JavaScript are more easily converted into each other.  This is called type coercion and we'll talk about that more next week as well.</p>
+			<p>For now, let's write some variables and then keep going.</p>
+			<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var" target="blank">var on MDN</a></p>
 		</div>
 
 		<div class="slide">
 			<p>Multiply and divide</p>
-			<pre><code>2 * 2;
-2 / 3;</code></pre>
+			<pre><code><c></c>2 * 2;
+<c></c>2 / 3;</code></pre>
 		</div>
 
 		<div class="slide">
 			<p>Concatenation</p>
-			<pre><code>var h = "hello";
-var w = "world";
-x + w;
-"hello" + "world";
-"hello " + "world";</code></pre>
+			<pre><code><c></c>var h = "hello";
+<c></c>var w = "world";
+<c></c>x + w;
+<c></c>"hello" + "world";
+<c></c>"hello " + "world";</code></pre>
 		</div>
 
 		<div class="slide">
 			<p>Increment, decrement</p>
-			<pre><code>var x = 0;
-x++;
-x += 10;
-var y = ++x;
-var z = x++;
-x--;
-x -= 5;</code></pre>
+			<pre><code><c></c>var x = 0;
+<c></c>x++;
+<c></c>x += 10;
+<c></c>var y = ++x;
+<c></c>var z = x++;
+<c></c>x--;
+<c></c>x -= 5;</code></pre>
 		</div>
 
 		<div class="slide">
 			<p>Addition vs. concatenation</p>
-			<pre><code>var x = 1;
-var y = "7";
-x + y;
-typeof x + y;
-y + x;
-x + +y;
-x + Number(y);</code></pre>
+			<pre><code><c></c>var x = 1;
+<c></c>var y = "7";
+<c></c>x + y;
+<c></c>typeof x + y;
+<c></c>y + x;
+<c></c>x + +y;
+<c></c>x + Number(y);</code></pre>
 		</div>
 
 		<!--  assignment use operators to change color -->

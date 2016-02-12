@@ -5,4 +5,11 @@ In class: [Code academy review](http://www.codecademy.com/courses/getting-starte
 
 **Assignment 2**
 - Using p5, create a design that uses variables as the arguments for the drawing functions.
+- Drawing functions include fill(), stroke(), rect(), line(), ellipse(), triangle() etc...
+
+```
+fill(0); // NOT VALID
+var c = color(255,0,255);
+fill(c); // VALID
+```
 - There should be at least 5 colors and 5 shapes.

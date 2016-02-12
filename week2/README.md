@@ -9,6 +9,7 @@ In class: [Code academy review](http://www.codecademy.com/courses/getting-starte
 
 ```
 fill(0); // NOT VALID
+
 var c = color(255,0,255);
 fill(c); // VALID
 ```

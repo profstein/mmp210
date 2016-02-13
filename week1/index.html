@@ -3,16 +3,15 @@
 <head>
 	<title>MMP 210 - Week 1</title>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" href="../slides/slides.css" type="text/css" />
-	<link rel="stylesheet" href="../slides/highlight/github-gist.css" type="text/css" />
+	<link rel="stylesheet" href="/slides/slides.css" type="text/css" />
+	<link rel="stylesheet" href="/slides/highlight/github-gist.css" type="text/css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="../slides/slides.js"></script>
-	<script src="../slides/highlight/highlight.pack.js"></script>
+	<script src="/slides/slides.js"></script>
+	<script src="/slides/highlight/highlight.pack.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
+	<script src="/slides/p5.min.js"></script>
+	<script src="/slides/bkg.js"></script>
 	<style>
-		.slides .slide {
-			background: linear-gradient(to bottom, #B175FD 0%,#ee91e3 80%,lightblue 100%);
-		}
 		#box1 {
 		  border:1px dashed black;
 		  width:540px;
@@ -144,32 +143,32 @@
 		<div class="slide">
 			<h2>Class</h2>
 			<p>Classes describe a basic set of styles that can be applied multiple tags in an HTML page.  In HTML a class is added to an element with the <strong>class attribute</strong>.</p>
-			<pre>&lt;div <hl>class</hl>="content"&gt;&lt;/div&gt;</pre>
+			<pre><code>&lt;div class="content"&gt;&lt;/div&gt;</code></pre>
 			<p>Classes can be applied to multiple elements in a layout and multiple classes can be applied to one element:</p>
-			<pre>&lt;div class=<hl>"content post active"</hl>&gt;&lt;/div&gt;
-&lt;div class=<hl>"content post"</hl>&gt;&lt;/div&gt;
-&lt;div class=<hl>"content post"</hl>&gt;&lt;/div&gt;</pre>
+			<pre><code>&lt;div class="content post active"&gt;&lt;/div&gt;
+&lt;div class="content post"&gt;&lt;/div&gt;
+&lt;div class="content post"&gt;&lt;/div&gt;</code></pre>
 		</div>
 		<div class="slide">
 			<p>IDs can only be used once, on one element:</p>
-			<pre>&lt;div <hl>id</hl>="header"&gt;&lt;/div&gt;
-&lt;div <hl>id</hl>="main"&gt;&lt;/div&gt;</pre>
+			<pre><code>&lt;div id="header"&gt;&lt;/div&gt;
+&lt;div id="main"&gt;&lt;/div&gt;</code></pre>
 			<p>Classes and IDs can be contained in the same div:</p>
-			<pre>&lt;div <hl>id</hl>="header" <hl>class</hl>="content"&gt;&lt;/div&gt;
-&lt;div <hl>id</hl>="main" <hl>class</hl>="content post"&gt;&lt;/div&gt;</pre>
+			<pre><code>&lt;div id="header" class="content"&gt;&lt;/div&gt;
+&lt;div id="main" class="content post"&gt;&lt;/div&gt;</code></pre>
 		</div>
 		<div class="slide">
-			<p>In CSS, rules for classes use a period or full stop (<code>.</code>) while IDS use the hashtag (<code>#</code>).</p>
-			<pre><hl>#header</hl> {
+			<p>In CSS, rules for classes use a period or full stop <code>.</code> while IDS use the hashtag <code>#</code>.</p>
+			<pre><code>#header {
   background-color:gray;
   font-size:2em;
   height:60px;
 }
-<hl>.content</hl> {
+.content {
   background-color:lightgray;
   font-size:1em;
   width:40px;
-}</pre>
+}</code></pre>
 		</div>
 
 		<div class="slide">
@@ -212,9 +211,7 @@ ul li a:hover {
 		<div class="slide">
 			<h2>Box model</h2>
 			<p>The position, size and layout of HTML elements is determined by the CSS box model, the display property and floats.  Without these rules, HTML pages are rendered in the order of the elements from the top to the bottom.</p>
-		</div>
 
-		<div class="slide">
       		<div id="box1">Margin
         		<div id="box2">Border
           			<div id="box3">Padding
@@ -244,6 +241,8 @@ border-bottom:
 border-right:
 border-left:</code></pre>
 			<p>Which can be applied to padding and margin as well.</p>
+		</div>
+		<div class="slide">
 			<p>The side can also be combined into one rule.  <code>margin: 1em;</code> will apply a 1em margin to each side.  <code>margin: 1em 0;</code> will apply a 1em margin to the top and bottom and a 0 margin to the right and left sides.  Using four numbers, we can apply in this order- top, right, bottom, left (clockwise around the circle), so, <code>margin: 1em 0 10px 5px;</code> is equivalent to:</p>
 			<pre><code>margin-top:1em;
 margin-right:0;
@@ -260,11 +259,11 @@ margin-left:5px;</code></pre>
 		</div>
 		<div class="slide">
 			<img src="block.png" />
-			<p>Block display.</p>
+			<p class="label">Block display.</p>
 		</div>
 		<div class="slide">
 			<img src="inline.png" />
-			<p>Inline display.</p>
+			<p class="label">Inline display.</p>
 		</div>
 		<div class="slide">
 			<p>Elements can also be set to <code>display: none;</code> which makes them not appear in the layout.  This has advantages that we&#8217;ll look at next class in combination with <strong>pseudo tags</strong>.  There are also hybrid elements like <code>inline-block</code>, which allows an inline element to be given padding, margin and border, as well as width and height.</p>

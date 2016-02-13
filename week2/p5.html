@@ -9,18 +9,8 @@
 	<script src="../slides/slides.js"></script>
 	<script src="../slides/highlight/highlight.pack.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
-	<style>
-		.slides .slide {
-			background: linear-gradient(to bottom, #B175FD 0%,#ee91e3 80%,lightblue 100%);
-		}
-		code, pre {
-			color:darkblue;
-			background:#f9f9f9;
-			padding:0.1em 0.25em;
-			border-radius: 0.2em;
-			/*border:1px solid blue;*/
-		}
-	</style>
+	<script src="/slides/p5.min.js"></script>
+	<script src="/slides/bkg.js"></script>
 </head>
 <body>
 	<div id="container" class="slides language-js">
@@ -82,7 +72,7 @@ background(green);</code></pre>
 			<p>Make sure to draw you background before drawing anything else.</p>
 		</div>
 
-		<div class="slide long">
+		<div class="slide">
 			<p>Now lets trying the statements and operators we learned to change a color over time.</p>
 			<pre><code>var red = 0;
 var redIncrement = 20;
@@ -104,7 +94,7 @@ ellipse(red, 20, redIncrement, redIncrement);</code></pre>
 		</div>
 
 		<div class="slide">
-			<p>Notice how the variables <code>red</code> and <code>redIncrement</code> are being used to do more then just set the color?</p>
+			<p>Notice how the variables <code>red</code> and <code>redIncrement</code> are being used to do more then just set the color.</p>
 		</div>
 	</div>
 </body>

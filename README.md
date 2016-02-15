@@ -16,7 +16,8 @@ Office S622C
 Office Hours  
 Monday, Wednesday, Thursday 4pm - 5pm  
 
-Course site: [github.com/owenroberts/mmp210/](https://github.com/owenroberts/mmp210/)
+Course site: [http://github.com/owenroberts/mmp210/](https://github.com/owenroberts/mmp210/)
+Notes: [http://owenroberts.github.io/mmp210/](http://owenroberts.github.io/mmp210/)
 
 
 ###Course Description

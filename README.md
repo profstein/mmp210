@@ -94,6 +94,10 @@ For MMP and MMA tutoring, please visit BMCC's [tutoring schedule](http://www.bmc
 - [HTML / CSS Review notes](https://owenroberts.github.io/mmp210/week1/index.html)
 - [Intro to p5](https://owenroberts.github.io/mmp210/week1/p5.html)
 
-**Week 2: Statement and operators**
-- [JavaScript statements and operators](https://owenroberts.github.io/mmp210/week2/index.html)
+**Week 2: Statements, variables, operators**
+- [JavaScript statements, variables and operators](https://owenroberts.github.io/mmp210/week2/index.html)
 - [p5 color, stroke and fill](https://owenroberts.github.io/mmp210/week2/p5.html)
+
+**Week 3:**
+- [JavaScript](https://owenroberts.github.io/mmp210/week3/index.html)
+- [p5 ](https://owenroberts.github.io/mmp210/week3/p5.html)

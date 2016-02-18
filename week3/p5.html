@@ -53,13 +53,186 @@ function draw() {
 		<div class="slide">
 			<h2>Static system variables</h2>
 			<p>Some basic variables will stay the same throughout the lifetime of your sketch</p>
-			<!-- width, height, windowWidth, windowHeight -->
+			<p><code>width</code> and <code>height</code> are static variables that are set to the width and height of the sketch, which is (100, 100) by default or whatever is set in createCanvas();</p>
+			<p>Let's use <code>width</code> and <code>height</code> to draw a simple grid.</p>
 		</div>
 
+		<div class="slide">
+			<pre><code>function setup() {
+	createCanvas(640, 480);
 
-		<!-- mouseX, mouseY, pmouseX, pmouseY,  -->
+	background("white");
 
-		
+	stroke("purple");
+	strokeWeight(2);
+
+	line(width/2, 0, width/2, height);
+
+	line(0, height/2, width, height/2);
+}</code></pre>
+		</div>
+		<div class="slide">
+			<p>Or a more complex grid:</p>
+			<pre><code>function setup() {
+	createCanvas(640, 480);
+
+	background("white");
+
+	stroke("darkblue");
+	strokeWeight(1);
+
+	var x = 0;
+	var y = 0;
+
+	var xunit = width/4;
+	var yunit = height/4;
+
+	x += xunit;
+	y += yunit;
+
+	line(x, 0, x, height);
+	line(0, y, width, y);
+
+	x += xunit;
+	y += yunit;
+
+	line(x, 0, x, height);
+	line(0, y, width, y);
+
+	x += xunit;
+	y += yunit;
+
+	line(x, 0, x, height);
+	line(0, y, width, y);
+
+}</code></pre>
+		</div>
+
+		<div class="slide">
+			<h2>Dynamic system variables</h2>
+			<p>Some system variables change over time.  Remember <code>mouseX</code> and <code>mouseY</code> from our first class?  These values change everytime you move your mouse.</p>
+			<p>To capture those values over time, we need to use a draw loop to capture the movement of our mouse by running the program every frame.</p>
+		</div>
+		<div class="slide">
+			<pre><code>function setup() {
+	createCanvas(640, 480);
+}
+
+function draw() {
+	background("white");
+
+	strokeWeight(4);
+	stroke("blue");
+	fill("lightblue");
+
+	line(mouseX, mouseY, width, height);
+	ellipse(mouseX, mouseY, 40, 40);
+}</code></pre>
+		</div>
+
+		<div class="slide">
+			<p>p5 also has <code>pmouseX</code> and <code>pmouseY</code> values that keep track of where you mouse was last.</p>
+			<pre><code>function setup() {
+	createCanvas(640, 480);
+}
+
+function draw() {
+	background("white");
+
+	strokeWeight(4);
+	stroke("blue");
+	fill("lightblue");
+
+	line(mouseX, mouseY, pmouseX, pmouseY);
+
+	ellipse(mouseX, mouseY, 40, 40);
+	ellipse(pmouseX, pmouseY, 20, 20);
+	
+}</code></pre>
+		</div>
+
+		<div class="slide">
+			<p>Another fun system variable is <code>frameCount</code>.  This number tells us how many frames the program has run.  It goes up by one for every frame.  It's sort of like our earlier example where we icremented <code>x++</code> every frame.</p>
+		</div>
+
+		<div class="slide">
+			<pre><code>function setup() {
+	createCanvas(640, 480);
+	background("white");
+}
+
+function draw() {
+	stroke("green");
+	fill("lightgreen");
+	ellipse(width/2, height/2, frameCount, frameCount);
+
+	fill(255, 0, frameCount);
+	ellipse(100, 100, 40, 40);
+}</code></pre>
+		</div>
+
+		<div class="slide">
+			<p>In our last example, let's combine system variables with the conditional logic we learned earlier.</p>
+			<pre><code>function setup() {
+	createCanvas(640, 480);
+}
+
+function draw() {
+
+	strokeWeight(4);
+	stroke("blue");
+	
+	if (mouseX > width/2) {
+		fill("lightblue");
+	} else {
+		fill("pink");
+	}
+	
+	ellipse(mouseX, mouseY, 40, 40);
+}</code></pre>
+		</div>
+
+		<div class="slide">
+			<p>One last example, where we'll combine everything.  Bear with me.</p>
+			<pre><code>var x = 0;
+var y = 0;
+
+function setup() {
+	createCanvas(640, 480);
+}
+
+function draw() {
+	background("white");
+
+	strokeWeight(4);
+	stroke("blue");
+	
+	if (mouseX > width/2) {
+		fill("lightblue");
+	} else {
+		fill("pink");
+	}
+
+	var radius = 5;
+	if (frameCount < 100) {
+		radius = frameCount;
+	} else {
+		radius = 100;
+	}
+
+	if (x < width) {
+		x++;
+	} else {
+		if (y < height) {
+			y++;
+		}
+	}
+
+	line(mouseX, mouseY, x, y);
+	ellipse(mouseX, mouseY, radius, radius);
+}</code></pre>
+		</div>
+
 	</div>
 </body>
 </html>

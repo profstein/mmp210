@@ -99,5 +99,5 @@ For MMP and MMA tutoring, please visit BMCC's [tutoring schedule](http://www.bmc
 - [p5 color, stroke and fill](https://owenroberts.github.io/mmp210/week2/p5.html)
 
 **Week 3:**
-- [JavaScript](https://owenroberts.github.io/mmp210/week3/index.html)
-- [p5 ](https://owenroberts.github.io/mmp210/week3/p5.html)
+- [JavaScript comparison operators and conditionals](https://owenroberts.github.io/mmp210/week3/index.html)
+- [p5 system variables](https://owenroberts.github.io/mmp210/week3/p5.html)

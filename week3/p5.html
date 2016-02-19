@@ -196,6 +196,7 @@ function draw() {
 			<p>One last example, where we'll combine everything.  Bear with me.</p>
 			<pre><code>var x = 0;
 var y = 0;
+var radius = 5;
 
 function setup() {
 	createCanvas(640, 480);
@@ -213,11 +214,9 @@ function draw() {
 		fill("pink");
 	}
 
-	var radius = 5;
+	
 	if (frameCount < 100) {
 		radius = frameCount;
-	} else {
-		radius = 100;
 	}
 
 	if (x < width) {

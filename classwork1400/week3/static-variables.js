@@ -1,6 +1,7 @@
 var blue;
+
 function setup() {
-    createCanvas(640, 480);
+   createCanvas(640, 480);
     background("white");
     blue = color("lightblue"); 
 

@@ -1,6 +1,7 @@
 var r = 0;
+
 function setup() {
-    createCanvas(640, 480);
+     createCanvas(640, 480);
 }
 function draw() {
     background("white");

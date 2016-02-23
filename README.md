@@ -17,9 +17,9 @@ Office Hours
 Monday, Wednesday, Thursday 4pm - 5pm  
 
 Course site: [http://github.com/owenroberts/mmp210/](https://github.com/owenroberts/mmp210/)  
-Notes: [http://owenroberts.github.io/mmp210/](http://owenroberts.github.io/mmp210/)
-Examples (1400): [https://owenroberts.github.io/mmp210/classwork1400/](https://owenroberts.github.io/mmp210/classwork1400/)
-Examples (1700): [https://owenroberts.github.io/mmp210/classwork1700/](https://owenroberts.github.io/mmp210/classwork1700/)
+Notes: [http://owenroberts.github.io/mmp210/](http://owenroberts.github.io/mmp210/)  
+Examples (1400): [https://owenroberts.github.io/mmp210/classwork1400/](https://owenroberts.github.io/mmp210/classwork1400/)  
+Examples (1700): [https://owenroberts.github.io/mmp210/classwork1700/](https://owenroberts.github.io/mmp210/classwork1700/)  
 
 ###Course Description
 

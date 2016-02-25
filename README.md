@@ -102,3 +102,8 @@ For MMP and MMA tutoring, please visit BMCC's [tutoring schedule](http://www.bmc
 **Week 3:**
 - [JavaScript comparison operators and conditionals](https://owenroberts.github.io/mmp210/week3/index.html)
 - [p5 system variables](https://owenroberts.github.io/mmp210/week3/p5.html)
+
+**Week 4:**
+- [JavaScript for loops](https://owenroberts.github.io/mmp210/week4/index.html)
+- [p5: drawing with loops](https://owenroberts.github.io/mmp210/week4/p5.html)
+

@@ -17,8 +17,9 @@ Office Hours
 Monday, Wednesday, Thursday 4pm - 5pm  
 
 Course site: [http://github.com/owenroberts/mmp210/](https://github.com/owenroberts/mmp210/)  
-Notes: [http://owenroberts.github.io/mmp210/](http://owenroberts.github.io/mmp210/)
-
+Notes: [http://owenroberts.github.io/mmp210/](http://owenroberts.github.io/mmp210/)  
+Examples (1400): [https://owenroberts.github.io/mmp210/classwork1400/](https://owenroberts.github.io/mmp210/classwork1400/)  
+Examples (1700): [https://owenroberts.github.io/mmp210/classwork1700/](https://owenroberts.github.io/mmp210/classwork1700/)  
 
 ###Course Description
 
@@ -101,3 +102,8 @@ For MMP and MMA tutoring, please visit BMCC's [tutoring schedule](http://www.bmc
 **Week 3:**
 - [JavaScript comparison operators and conditionals](https://owenroberts.github.io/mmp210/week3/index.html)
 - [p5 system variables](https://owenroberts.github.io/mmp210/week3/p5.html)
+
+**Week 4:**
+- [JavaScript for loops](https://owenroberts.github.io/mmp210/week4/index.html)
+- [p5: drawing with loops](https://owenroberts.github.io/mmp210/week4/p5.html)
+

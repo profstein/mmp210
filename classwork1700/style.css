@@ -3,8 +3,9 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     margin:0;
     line-height:1.45;
-    font-size:1.4em;
+    font-size:1em;
 }
+* { box-sizing: border-box }
 p, h1 { color: azure; }
 h1 { font-weight:200; }
 a, li { 
@@ -21,16 +22,22 @@ ul {
 ul li {
     display:inline-block;
     padding:0.1em;
-    margin-right: 1em;
+    
     position:relative;
+    width:49%;
 }
 ul li ul {
     display:none;
     position:absolute;
     left:0;
+    top:1.2em;
+}
+ul li ul li {
+    display:block;
+    width:100%;
 }
 ul li:hover ul {
-    display:inline-block;
+    display:block;
 }
 #container {
     max-width:600px;

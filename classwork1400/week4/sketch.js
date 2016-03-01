@@ -13,8 +13,8 @@ function setup(){
         
         fill( x, y, i );
         
-        //ellipse(x, y, r, r);
-        rect(x, y, r, r);
+        ellipse(x, y, r, r);
+        //rect(x, y, r, r);
         
         x += width/columns;
     

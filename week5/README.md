@@ -4,5 +4,5 @@
 In class: [Code academy: functions](https://www.codecademy.com/courses/functions-in-javascript-2-0/)
 
 **Assignment 5**
-- Redo assignment 4 using a new function that you define
-- Submit URL via Blackboard.
+- Rewrite your window drawing as a defined function.
+- Upload to your server and submit URL via Blackboard.

@@ -113,4 +113,4 @@ For MMP and MMA tutoring, please visit BMCC's [tutoring schedule](http://www.bmc
 
 **Week 6:**
 - Draw a spaceship
-- [Animating the spaceship](https://owenroberts.github.io/mmp210/week5/index.html)
+- [p5: animation, random, modulo](https://owenroberts.github.io/mmp210/week6/index.html)

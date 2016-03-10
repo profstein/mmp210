@@ -109,5 +109,8 @@ For MMP and MMA tutoring, please visit BMCC's [tutoring schedule](http://www.bmc
 
 **Week 5:**
 - [JavaScript functions](https://owenroberts.github.io/mmp210/week5/index.html)  
-- [p5: defining functions, nested for loops](https://owenroberts.github.io/mmp210/week5/p5.html)  
+- [p5: defining functions, nested for loops](https://owenroberts.github.io/mmp210/week5/p5.html)
 
+**Week 6:**
+- Draw a spaceship
+- [Animating the spaceship](https://owenroberts.github.io/mmp210/week5/index.html)

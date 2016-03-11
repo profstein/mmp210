@@ -1,14 +1,50 @@
+var x = 10;
+var y = 100;
+var r;
+var g;
+var b;
+
 function setup() {
     createCanvas(640, 480);
+    r = random(0, 255);
+    g = random(0, 255);
+    b = random(0, 255);
+}
+
+function draw() {
     background("white");
     
-    rocket( 150, 150, 50);
-    rocket( 250, 150, 20);
+    if (frameCount % 30 == 0) {
+        r = random(0, 255);
+        g = random(0, 255);
+        b = random(0, 255);
+    }
     
-    rocket( 350, 150, 50);
-    rocket( 350, 150, 20);
+    fill(r, g, b);
     
+    rocket(x, y, 40);
+    //ellipse(x, y, 40, 40);
+    
+    
+    x += 1;
+   
+    
+    if (x > width) {
+        x = 0;
+    }
+    
+    /*var r = random(-5, 5);*/
+        
+    if (x < width/2) {
+         y ++;
+    } else {
+        y --;
+    }
+    fill("blue");
+    text(r, 20, 20);
 }
+
+
 
 var rocket = function(x, y, size) {
         

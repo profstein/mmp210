@@ -99,15 +99,21 @@ For MMP and MMA tutoring, please visit BMCC's [tutoring schedule](http://www.bmc
 - [JavaScript statements, variables and operators](https://owenroberts.github.io/mmp210/week2/index.html)
 - [p5 color, stroke and fill](https://owenroberts.github.io/mmp210/week2/p5.html)
 
-**Week 3:**
+**Week 3: Logic**
 - [JavaScript comparison operators and conditionals](https://owenroberts.github.io/mmp210/week3/index.html)
 - [p5 system variables](https://owenroberts.github.io/mmp210/week3/p5.html)
 
-**Week 4:**
+**Week 4: Loops**
 - [JavaScript for loops](https://owenroberts.github.io/mmp210/week4/index.html)
 - [p5: drawing with loops](https://owenroberts.github.io/mmp210/week4/p5.html)
 
-**Week 5:**
+**Week 5: Functions**
 - [JavaScript functions](https://owenroberts.github.io/mmp210/week5/index.html)  
-- [p5: defining functions, nested for loops](https://owenroberts.github.io/mmp210/week5/p5.html)  
+- [p5: defining functions, nested for loops](https://owenroberts.github.io/mmp210/week5/p5.html)
 
+**Week 6: Animation**
+- Draw a spaceship
+- [p5: animation, random, modulo](https://owenroberts.github.io/mmp210/week6/index.html)
+
+**Week 7: Text**
+- [p5: text](https://owenroberts.github.io/mmp210/week7/index.html)

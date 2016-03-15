@@ -8,11 +8,8 @@ function setup() {
     drawWindow(10,  300, 100, 200, 5, 50);
     drawWindow(150, 300, 100, 200, 5, 50);
     
-    drawWindow(510, 30, 10, 20, 5, 50);
-    drawWindow(650, 30, 100, 200, 5, 50);
-    
-    drawWindow(510, 60, 10, 20, 1, 5);
-    drawWindow(650, 60, 10, 20, 1, 5);
+    drawWindow(510, 30, 10, 20, 1, 5);
+
     
 }
 
@@ -22,7 +19,7 @@ var drawWindow = function(x, y, w, h, s, d) {
     fill("lightgreen");
     
     rect(x, y, w, h/2);
-    arc(x + w/2,  y + 4, w + 1, d, PI, TWO_PI);
+    arc(x + w/2,  y + s, w , d, PI, TWO_PI);
     
     fill("darkgreen");
     

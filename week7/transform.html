@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<title>MMP 210 - Week 7</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="../slides/slides.css" type="text/css" />
+	<link rel="stylesheet" href="../slides/highlight/github-gist.css" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="../slides/highlight/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<script src="../slides/p5.min.js"></script>
+	<script src="../slides/bkg.js"></script>
+
+	<script type="text/javascript" src="../slides/lib/Blob.js"></script>
+	<script type="text/javascript" src="../slides/lib/FileSaver.min.js"></script>
+	<script src="../slides/slides.js"></script>
+</head>
+<body>
+	<div id="container" class="slides language-js">
+		<div class="slide">
+			<h1>p5: push, pop, transform</h1>
+			<p><a href="https://github.com/owenroberts/mmp210">MMP 210</a> > <a href="https://github.com/owenroberts/mmp210/tree/master/week7">Week 7</a></p>
+		</div>
+
+		<div class="slide">
+			<p>In p5, we can change shapes by changing the fill, shape and size, but we can also change the whole canvas using transformations.  Usually we draw everything starting at <code>0, 0</code> in the upper left corner, but we can change that.  We can also change the size and rotation or our sketches.  And we can do it multiple times throughout the program.  This is an convenient way to create new effects and animations.</p>
+		</div>
+
+		<!-- transform, rotate -->
+		<div class="slide">
+						<pre><code>function setup() {
+	transform(width/2, height/2);
+	rect(width/2, height/2);
+}</code></pre>
+		</div>
+
+		<div class="slide">
+			<p>For this to work and things not to go to crazy, we need to save and reset the current transformation of the canvas.  There are too simple functions to do this: <code>push</code> and <code>pop</code>.</p>
+
+		</div>
+
+	</div>
+</body>
+</html>

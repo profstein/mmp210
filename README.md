@@ -117,3 +117,4 @@ For MMP and MMA tutoring, please visit BMCC's [tutoring schedule](http://www.bmc
 
 **Week 7: Text**
 - [p5: text](https://owenroberts.github.io/mmp210/week7/index.html)
+- [p5: push, pop, transform](https://owenroberts.github.io/mmp210/week7/transform.html)

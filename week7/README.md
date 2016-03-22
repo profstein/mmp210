@@ -1,7 +1,8 @@
 - [p5: text](https://owenroberts.github.io/mmp210/week7/index.html)
+- [p5: push, pop, transform](https://owenroberts.github.io/mmp210/week7/transform.html)
 
 **Assignment 7**
-- Add text to an earlier project, the window, self portrait, or spaceship
-- Use at least 3 font styles
-- Submit URL via Blackboard
+- Make an animated logo with your name (or some other project)
+- Should use text and other shapes
+- Upload to mmp.bmcc.cuny.edu and submit link via Blackboard
 

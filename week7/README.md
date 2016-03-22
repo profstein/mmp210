@@ -6,3 +6,6 @@
 - Should use text and other shapes
 - Upload to mmp.bmcc.cuny.edu and submit link via Blackboard
 
+Inspiration
+- [Animated name logos](http://www.flamingtext.com/Animated-Logos)
+- [Animated logos](http://www.howdesign.com/featured/animated-logos/)

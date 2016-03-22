@@ -13,7 +13,7 @@ function setup() {
     var str3 = "Strings can also include numbers like 100, punctuation like !~+:) and special characters like π or © or ∆";
     
     fill("blue");
-    strokeWeight(5);
+    textFont("Karla");
     stroke("green");
     
     str1 = str1.replace("Hello", "");
@@ -23,7 +23,7 @@ function setup() {
     y += lineSize;
     text(str2[str2.length - 1], 20, y);
     
-    textFont("monaco");
+    textFont("Karla");
     
     textStyle(ITALIC);
     textAlign(RIGHT);

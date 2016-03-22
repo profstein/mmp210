@@ -109,7 +109,7 @@ For MMP and MMA tutoring, please visit BMCC's [tutoring schedule](http://www.bmc
 
 **Week 5: Functions**
 - [JavaScript functions](https://owenroberts.github.io/mmp210/week5/index.html)  
-- [p5: defining functions, nested for loops](https://owenroberts.github.io/mmp210/week5/p5.html)
+- [p5: defining functions](https://owenroberts.github.io/mmp210/week5/p5.html)
 
 **Week 6: Animation**
 - Draw a spaceship
@@ -118,3 +118,8 @@ For MMP and MMA tutoring, please visit BMCC's [tutoring schedule](http://www.bmc
 **Week 7: Text**
 - [p5: text](https://owenroberts.github.io/mmp210/week7/index.html)
 - [p5: push, pop, transform](https://owenroberts.github.io/mmp210/week7/transform.html)
+
+**Week 8: Generating designs**
+- [p5: nested for loops]
+- []
+- Midterm

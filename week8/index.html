@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+	<title>MMP 210 - Week 7</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="../slides/slides.css" type="text/css" />
+	<link rel="stylesheet" href="../slides/highlight/github-gist.css" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="../slides/highlight/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<script src="../slides/p5.min.js"></script>
+	<script src="../slides/bkg.js"></script>
+
+	<script type="text/javascript" src="../slides/lib/Blob.js"></script>
+	<script type="text/javascript" src="../slides/lib/FileSaver.min.js"></script>
+	<script src="../slides/slides.js"></script>
+</head>
+<body>
+	<div id="container" class="slides language-js">
+		<div class="slide">
+			<h1>p5 review: nested for loops, random, logic</h1>
+			<p><a href="https://github.com/owenroberts/mmp210">MMP 210</a> > <a href="https://github.com/owenroberts/mmp210/tree/master/week8">Week 8</a></p>
+		</div>
+
+		<div class="slide">
+			<p>For the midterm we are going to put together several concepts we've been covering throughout the semester to try to make something that really justifies all the code we've been learning.</p>
+			<p>What makes p5 and programming useful?  If you're a designer, you probably think it's a lot easier to draw a rectangle in Illustrator or Photoshop than p5 or JavaScript.  So why are we learning to code?</p>
+			<p>What if I asked you to draw 1000 rectangles in Illustrator?</p>
+			<p>What if I then asked you to make every single rectangle a different color?</p>
+			<p>And a different shape?</p>
+			<p>That's beginning to sound impossible, but in p5 it's only a few lines of code.  Let's start there and then expand to see how we can make even more patterns.
+		</div>
+
+		<div class="slide">
+			<p>Okay, our task is to draw 1000 rectangles that are all different colors and different sizes.  Let's start by drawing one rectangle.</p>
+			<pre><code>function setup() {
+    createCanvas(640, 480);
+    background("white");
+    rect(0, 0, 50, 50);
+}</code></pre>
+		</div>
+
+		<div class="slide">
+			<p>Let's add a for loop to draw 1000.</p>
+			<pre><code>function setup() {
+    createCanvas(640, 480);
+    background("white");
+    rect(0, 0, 50, 50);
+}</code></pre>
+		</div>
+
+
+	</div>
+</body>

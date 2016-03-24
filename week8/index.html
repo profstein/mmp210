@@ -25,6 +25,9 @@
 		<div class="slide">
 			<p>For the midterm we are going to put together several concepts we've been covering throughout the semester to try to make something that really justifies all the code we've been learning.</p>
 			<p>What makes p5 and programming useful?  If you're a designer, you probably think it's a lot easier to draw a rectangle in Illustrator or Photoshop than p5 or JavaScript.  So why are we learning to code?</p>
+		</div>
+
+		<div class="slide">
 			<p>What if I asked you to draw 1000 rectangles in Illustrator?</p>
 			<p>What if I then asked you to make every single rectangle a different color?</p>
 			<p>And a different shape?</p>
@@ -60,7 +63,7 @@
 
 		<div class="slide">
 			<p>Kinda hard to see huh?  Maybe if we make each one a different color?</p>
-			<p>Let's grab the color randomization code from <a href="https://owenroberts.github.io/mmp210/week6/index.html" target="blank">week 6</a></p>
+			<p>Let's grab the color randomization code from <a href="https://owenroberts.github.io/mmp210/week6/index.html" target="blank">week 6</a>:</p>
 			<pre><code>function setup() {
     createCanvas(640, 640);
     background("white");
@@ -152,6 +155,9 @@
 			<p>Because columns go across the sketch and rows go up and down, we can get the right width for our rectangles by dividing total width by the number of columns.  Likewise, we can get the right number of rows by dividing the total height by number of rows.</p>
 			<pre><code>var w = width/columns;
 var h = height/rows;</code></pre>
+		</div>
+
+		<div class="slide">
 			<p>Then we can loop through the columns and rows testing to see if we have gotten to the bounds of the sketch.</p>
 			<p>For each column we loop through all of the rows, and then go to the next column.  That's how we get our nested for loop, and our design grid.</p>
 			<pre><code>for (var x = 0; x < width; x += w) {

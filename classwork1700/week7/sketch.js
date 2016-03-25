@@ -13,14 +13,14 @@ function draw(){
     
     push();
     translate(frameCount/2, 0);
-    rect(100, 200, 40,40);
+    //rect(100, 200, 40,40);
     pop();
     
     push();
     translate(width/2, height/2);
     scale(frameCount/4 , frameCount/4);
     noFill();
-    ellipse(0, 0, 20, 20);
+    //ellipse(0, 0, 20, 20);
     pop();
     
     push();

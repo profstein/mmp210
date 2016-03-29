@@ -1,10 +1,11 @@
 function setup(){
     createCanvas(640, 640);
-  
+    frameRate(24);
+}
+function draw() {
     background("white");
-    noStroke();
     
-    var size = 40;    
+    var size = 20;    
     for (var x = 0; x <= width; x += size) {
         for (var y = 0; y < height; y += size ) {
             var r = random(0,100);
@@ -15,13 +16,13 @@ function setup(){
             var rShape = random(0, 4);
             
             if (rShape < 1) {
-                arc(x, y,  size*2, size*2, 0, PI/2);
+                line(x, y, x + size, y + size);
             } else if (rShape < 2) {
-                arc(x + size, y, size*2, size*2, PI/2, PI);
+                line(x, y + size, x + size, y);
             } else if (rShape < 3) {
-                arc(x + size, y + size, size*2, size*2, PI, 3*PI/2);
+                line(x, y, x + size, y);
             } else {
-                arc(x, y + size, size*2, size*2, 3*PI/2, 0);
+                line(x + size, y, x + size, y + size);
             }
         }
     }

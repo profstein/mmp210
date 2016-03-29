@@ -1,4 +1,4 @@
-- [p5 review: nested for loops, random, logic](https://owenroberts.github.io/mmp210/week8/index.html)
+[p5 review: nested for loops, random, logic](https://owenroberts.github.io/mmp210/week8/index.html)
 
 **Midterm: Generative design**
 - Choose a theme that will inform your design

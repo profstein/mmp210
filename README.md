@@ -120,6 +120,21 @@ For MMP and MMA tutoring, please visit BMCC's [tutoring schedule](http://www.bmc
 - [p5: push, pop, transform](https://owenroberts.github.io/mmp210/week7/transform.html)
 
 **Week 8: Generating designs**
-- [p5: nested for loops]
-- []
-- Midterm
+- [p5: Generating patterns](https://owenroberts.github.io/mmp210/week8/index.html)
+- [Midterm](week8/)
+
+**Week 9: Review**
+- Midterm workshop
+
+**Week 10: Midterm presentations**
+
+**Week 11: Interaction**
+- Final requirements
+
+**Week 12: Image**
+
+**Week 13: APIs**
+
+**Week 14: Review**
+
+**Week 15: Final presentations**

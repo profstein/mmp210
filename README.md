@@ -123,7 +123,8 @@ For MMP and MMA tutoring, please visit BMCC's [tutoring schedule](http://www.bmc
 - [p5: Generating patterns](https://owenroberts.github.io/mmp210/week8/index.html)
 - [Midterm](week8/)
 
-**Week 9: Review**
+**Week 9: Arrays**
+- [Arrays](https://owenroberts.github.io/mmp210/week9/)
 - Midterm workshop
 
 **Week 10: Midterm presentations**

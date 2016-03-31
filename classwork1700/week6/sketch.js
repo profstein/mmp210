@@ -23,6 +23,8 @@ function draw() {
     fill(r, g, b);
     
     rocket(x, y, 40);
+    rocket(x + 10, y + 40, 40);
+    rocket(x + 50, y + 80, 40);
     //ellipse(x, y, 40, 40);
     
     

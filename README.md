@@ -128,6 +128,7 @@ For MMP and MMA tutoring, please visit BMCC's [tutoring schedule](http://www.bmc
 - Midterm workshop
 
 **Week 10: Midterm presentations**
+- [Objects](https://owenroberts.github.io/mmp210/week10/)
 
 **Week 11: Interaction**
 - Final requirements

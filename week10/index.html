@@ -78,7 +78,30 @@
         </div>
         
         <div class="slide">
-            
+            <p>So, instead of several arrays, we can use one array of spaceships:</p>
+            <pre><code>var spaceships = [];</code></pre>
+            <p>And then define a spaceship objects with each of the properties we used before:</p>
+            <pre><code>function Spaceship() {
+    this.x = random( 0, width/4 );
+    this.y = random( 0, height );
+    this.speed = random(1, 3);
+    this.size = random(10, 40);
+}</code></pre>
+        </div>
+
+        <div class="slide">
+        	<p>We will also add methods to the spaceship objects to draw it's shapes and update them:</p>
+        	<pre><code>this.draw = function() {
+	// all of the shapes we need for the spaceship
+}
+this.update = function() {
+	if (this.x < width) this.x += this.speed;
+	else this.x = 0;
+}</code></pre>
+        </div>
+
+        <div class="slide">
+            	
         </div>
 		
 

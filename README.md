@@ -133,8 +133,7 @@ For MMP and MMA tutoring, please visit BMCC's [tutoring schedule](http://www.bmc
 **Week 11: Interaction**
 - [Interaction](https://owenroberts.github.io/mmp210/week11/)
 - Final requirements
-    - The final project is an interactive design
-    - 
+	- The final project is an interactive design
 
 **Week 12: Image**
 

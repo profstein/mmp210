@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+	<title>MMP 210</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="../slides/slides.css" type="text/css" />
+	<link rel="stylesheet" href="../slides/highlight/github-gist.css" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="../slides/highlight/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<script src="../slides/p5.min.js"></script>
+	<script src="../slides/bkg.js"></script>
+
+	<script type="text/javascript" src="../slides/lib/Blob.js"></script>
+	<script type="text/javascript" src="../slides/lib/FileSaver.min.js"></script>
+	<script src="../slides/slides.js"></script>
+</head>
+<body>
+	<div id="container" class="slides language-js">
+		<div class="slide">
+			<h1>JavaScript interactivity</h1>
+			<p><a href="https://github.com/owenroberts/mmp210">MMP 210</a> > <a href="https://github.com/owenroberts/mmp210/tree/master/week11/">Week 11</a></p>
+		</div>
+        
+        <div class="slide">
+            <p>Besides the ability to draw a thousands circles or spaceships and create random colors, programming gives us the ability to make our designs interactive.  See some examples from the <a href="https://p5js.org/gallery/" target="blank">p5 gallery</a>.</p>
+            <p>Interactive design give the user the ability to influence the design.  Sometimes the changes are small, sometimes they are large -- the artist has the ability to control how much the user can change.</p>
+            <p>In JavaScript, we use <strong>events</strong> to detect when a user interacts with a program.  We can detect things like mouse movement, mouse clicks, key board inputs and change in orientation or touches in mobile devices.  Today we'll start with some simple interactions.</p>
+        </div>
+        
+        <div class="slide">
+            <p>As we've seen in previous examples, we can use <code>mouseX</code> and <code>mouseY</code> to track the movement of the mouse, and map it's movement to our color scale.</p>
+            <pre><code>function setup(){
+	createCanvas(720, 360);
+}
+function draw(){
+	background("black");
+	translate(width/2, height/2);
+	fill(
+		0, //red
+		map(mouseX, 0, width, 0, 255), //green
+		map(mouseY, 0, height, 0, 255) //blue
+	)
+
+	ellipse(0, 0, 100, 100);
+}</code></pre>
+        </div>
+        
+        <div class="slide">
+            <p>We can also detect when the mouse is clicked using <code>mousePressed()</code>:</p>
+            <pre><code>var r, g, b;
+function setup(){
+	createCanvas(720, 360);
+}
+function draw(){
+	background("black");
+	translate(width/2, height/2);
+	fill(r, g, b);
+	ellipse(0, 0, 200, 200);
+}
+function mousePressed() {
+	r = random(0, 255);
+	g = random(0, 255);
+	b = random(0, 255);
+}</code></pre>
+        </div>
+        
+        <div class="slide">
+            <p>We can use the <code>dist()</code> function to determine if the mouse is inside of the ellipse to create a button:</p>
+            <pre><code>var r, g, b;
+function setup(){
+	createCanvas(720, 360);
+}
+function draw(){
+	background("black");
+	fill(r, g, b);
+	ellipse(width/2, height/2, 200, 200);
+}
+function mousePressed() {
+	if ( dist(mouseX, mouseY, width/2, height/2) < 100 ) {
+		r = random(0, 255);
+		g = random(0, 255);
+		b = random(0, 255);
+	}
+}</code></pre>
+        </div>
+        
+        <div class="slide">
+        
+        </div>
+        
+        <div class="slide">
+        
+        </div>
+        
+        <div class="slide">
+        
+        </div>
+        
+        <div class="slide">
+        
+        </div>
+        
+        <div class="slide">
+        
+        </div>
+        
+        <div class="slide">
+        
+        </div>
+
+
+
+	</div>
+</body>

@@ -140,13 +140,13 @@ For MMP and MMA tutoring, please visit BMCC's [tutoring schedule](http://www.bmc
 		- variables
 		- if ... else logic statement
 		- at least one for loop
-		- at least one definted function
+		- at least one defined function
 		- shape and color functions
 		- user input
 		- animation
 		- image
 	- User input can be mouse, keyboard, HTML elements, or a combination
-	- [p5 examples for insprition](https://p5js.org/gallery/)
+	- [p5 examples for inspiration](https://p5js.org/gallery/)
 
 **Week 12: Image**
 

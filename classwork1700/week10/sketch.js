@@ -11,7 +11,7 @@ function setup() {
 }
 
 function draw() {
-    background("white");
+    background("black");
 
     for (var i = 0; i < numShips; i++) {
         spaceships[i].draw();
@@ -45,6 +45,7 @@ function Spaceship() {
     
     this.draw = function() {
         fill(this.shipColor);
+        stroke("white");
         rect(this.x, this.y, this.size * 2, this.size);
         triangle(this.x, this.y, this.x, this.y - this.fin, this.x + this.size, this.y);
         triangle(this.x, this.y + this.size, this.x, this.y + this.size + this.fin, this.x + this.size, this.y + this.size);

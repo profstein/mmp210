@@ -133,7 +133,20 @@ For MMP and MMA tutoring, please visit BMCC's [tutoring schedule](http://www.bmc
 **Week 11: Interaction**
 - [Interaction](https://owenroberts.github.io/mmp210/week11/)
 - Final requirements
-	- The final project is an interactive design
+	- The final project is making an interactive design
+	- Choose a new theme to inform design choices, like shape, color and pattern
+	- Designs can be abstract, represtational or combination
+	- Each program must use:
+		- variables
+		- if ... else logic statement
+		- at least one for loop
+		- at least one defined function
+		- shape and color functions
+		- user input
+		- animation
+		- image
+	- User input can be mouse, keyboard, HTML elements, or a combination
+	- [p5 examples for inspiration](https://p5js.org/gallery/)
 
 **Week 12: Image**
 

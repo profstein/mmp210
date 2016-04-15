@@ -27,7 +27,7 @@ ul li {
     width:49%;
 }
 ul li ul {
-    display:none;
+   /* display:none;*/
     position:absolute;
     left:0;
     top:1.2em;
@@ -42,6 +42,11 @@ ul li:hover ul {
 #container {
     max-width:600px;
     margin: 0 auto;
+}
+#sketch {
+    max-width: 720px;
+    margin:0 auto;
+    position:relative;
 }
 img { width:300px; }
 canvas { 

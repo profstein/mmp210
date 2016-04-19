@@ -25,7 +25,8 @@ function Spaceship() {
     this.y = random(0, height);
     this.speed = random(1, 4);
     this.size = random(10, 100);
-    this.fin = size/12;
+    this.fin = this.size/12;
+    console.log(this.fin);  
     this.shipColor = color(
         random(0, 255), 
         random(0, 255), 

@@ -1,31 +1,41 @@
-var angle = 0;
-var button;
-var input, name;
+var rotX = 0, rotY = 0, rotZ = 0;
 function setup() {
-    var myCanvas = createCanvas(720, 360);
-    myCanvas.parent("sketch");
-    
-    button = createButton("Add name");
-    button.mousePressed(addName);
-    button.parent("sketch");
-    button.position(10, 40);
-    
-    input = createInput();
-    input.parent("sketch");
-    input.position(10, 10);
-    
-    textSize(40);
-    textAlign(CENTER);
+    createCanvas(720, 360, WEBGL);
+
 }
 function draw() {
     background("black");
     
-    translate(width/2, height/2);
-    rotate(angle);
-    rect(0, 0, 100, 100);
-    fill("blue");
-    text(name, 0, 0);
+    camera(0, 0, 0);
+    
+    rotateX(rotX);
+    rotateY(rotY);
+    rotateZ(rotZ);
+    
+    push();
+    translate(-200, 0, 0);
+    cone(100, 100, 100);
+    pop();
+    
+    push();
+    translate(200, 0, 0);
+    torus(100, 50);
+    pop();
 }
-var addName = function() {
-    name = input.value();
+
+function keyPressed() {
+    console.log(keyCode);
+    if (keyCode === UP_ARROW) {
+        rotX -= 0.1;   
+    } else if (keyCode === DOWN_ARROW) {
+        rotX += 0.1;
+    } else if (keyCode === LEFT_ARROW) {
+        rotY += 0.1;
+    } else if (keyCode === RIGHT_ARROW) {
+        rotY -= 0.1;
+    } else if (keyCode === 90) {
+        rotZ += 0.1;
+    } else if (keyCode === 88) {
+        rotZ -= 0.1;
+    }
 }

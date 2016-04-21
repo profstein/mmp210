@@ -110,5 +110,101 @@ function Circle(x, y, c) {
 }</code></pre>
 		</div>
 
+		<div class="slide">
+			<h2>Video</h2>
+			<p>p5 also supports video, but it is treated as an HTML element, like the <code>input</code> and <code>button</code> elements we looked at last week.</p>
+			<p>To create a video element, we need to use the <code>p5.dom.js</code> library.</p>
+		</div>
+
+		<div class="slide">
+			<pre><code>var cat;
+function setup() {
+	createCanvas(720, 360);
+	cat = createVideo("cat.mp4");
+	cat.loop();
+}</code></pre>
+		</div>
+
+		<div class="slide">
+			<p>The <code>video</code> element has methods for playback including <code>play()</code>, <code>loop()</code>, <code>stop()</code> and <code>pause()</code>.  Other methods can be found on the <a href="http://p5js.org/reference/#/libraries/p5.dom" target="blank">p5 dom library</a> reference, under <note>p5.MediaElement</note>.
+			<pre><code>// global var to keep track of video status
+var playing = true;
+
+//toggle video
+function mouseClicked() {
+	if (playing) cat.pause();
+	else cat.loop();
+	playing = !playing;
+}</code></pre>
+		</div>
+
+		<div class="slide">
+			<h2>3d textures</h2>
+			<p>Images and videos can be used as textures for 3d objects.</p>
+			<p>Set up a program by importing the image and video data.  After adding the video, use the <code>hide()</code> method to hide the HTML element.  We will only use the video data as a texture.</p>
+			<pre><code>var cat;
+var playing = true;
+var img;
+var rotX = 0, rotY = 0;
+function setup() {
+	createCanvas(720, 360, WEBGL);
+	img = loadImage("cat.jpg");
+	cat = createVideo("cat.mp4");
+	cat.loop();
+	cat.hide();
+}</code></pre>
+		</div>
+
+		<div class="slide">
+			<p>Start by drawing a background, setting the image as a texture, and drawing a primitive sphere.</p>
+			<pre><code>function draw() {
+	background("black");
+
+	texture(img);
+
+	push();
+	translate(300, 0, 0);
+	rotateX(rotX);
+	rotateY(rotY);
+	sphere(200);
+	pop();
+}</code></pre>
+		</div>
+
+		<div class="slide">
+			<p>We'll rotate the sphere by dragging the mouse:</p>
+			<pre><code>function mouseDragged() {
+	rotX = mouseX / 100;
+	rotY = mouseY / 100;
+}</code></pre>
+			<p>See if you can improve this interaction using a <code>map()</code> function or using <code>pmouseX</code> and <code>pmouseY</code>.</p>
+		</div>
+
+		<div class="slide">
+			<p>The, inside the draw loop, add a box with the texture set to the cat video:</p>
+			<pre><code>function draw() {
+	texture(cat);
+
+	push();
+	translate(-300, 0, 0);
+	rotateX(frameCount * 0.01);
+	rotateY(frameCount * 0.01);
+	box(200, 200, 200);
+	pop();
+}</code></pre>
+
+		</div>
+
+		<div class="slide">
+			<p>For this sketch, let's use a keyPress to pause and play the video:</p>
+			<pre><code>function keyPressed() {
+	if (keyCode === 32) {
+		if (playing) cat.pause();
+		else cat.loop();
+		playing = !playing;
+	}	
+}</code></pre>
+		</div>
+
 	</div>
 </body>

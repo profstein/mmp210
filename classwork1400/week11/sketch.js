@@ -1,7 +1,7 @@
 var rotX = 0, rotY = 0, rotZ = 0;
 function setup() {
     createCanvas(720, 360, WEBGL);
-
+    textSize(100);
 }
 function draw() {
     background("black");
@@ -15,6 +15,7 @@ function draw() {
     push();
     translate(-200, 0, 0);
     cone(100, 100, 100);
+    text("NAME", 0, 0);
     pop();
     
     push();

@@ -151,7 +151,8 @@ For MMP and MMA tutoring, please visit BMCC's [tutoring schedule](http://www.bmc
 **Week 12: Image**
 - [Image](https://owenroberts.github.io/mmp210/week12/)
 
-**Week 13: APIs**
+**Week 13: Libraries**
+- [p5.play](https://owenroberts.github.io/mmp210/week13/)
 
 **Week 14: Review**
 

@@ -1,6 +1,6 @@
 var player;
-var speed = 0.5;
-var jump = 20;
+var speed = 7;
+var jump = 22;
 var jumping = false;
 
 //these will allow us to hold the sprites and animations for the player
@@ -35,18 +35,18 @@ function setup() {
     //lose collider because when don't use default sprite the collider doesn't work without further setup
 
     player.setCollider("circle", 0, 0, 32, 32); //set to 32 because using radius (half of 64), may need to go smaller depending on actual dimensions in drawing.
-    player.debug = true; //will show the collider circle
+    //    player.debug = true; //will show the collider circle
 
-    platform = createSprite(width / 2, height, 10000, 20); //made the width 10000 so won't "fall off"
+    platform = createSprite(width / 2, height, width, 20); //made the width 10000 so won't "fall off"
     platform.addImage(ground);
-    platform.debug = true;
-    platform.setCollider("rectangle", 0, 0, 10000, 10);
+    //    platform.debug = true;
+    platform.setCollider("rectangle", 0, 0, width, 10);
 
 
     obstacle = createSprite(300, height, 60, 80);
     obstacle.addImage(fire);
     obstacle.setCollider("rectangle", 0, 0, 64, 100);
-    obstacle.debug = true;
+    //    obstacle.debug = true;
 }
 
 function draw() {
@@ -78,15 +78,19 @@ function draw() {
     //
 
     //Changed to use arrows instead of a and d
-    if (keyDown(LEFT_ARROW)) {
-        player.velocity.x -= speed;
-        player.changeAnimation("walk");
-    } else if (keyDown(RIGHT_ARROW)) {
-        player.velocity.x += speed;
+    if (keyDown(RIGHT_ARROW)) {
+        obstacle.position.x -= speed;
+        platform.position.x -= speed;
         player.changeAnimation("walk");
     } else {
         player.changeAnimation("stand");
     }
+
+    if (platform.position.x < 0) platform.position.x = width / 2;
+
+    if (obstacle.position.x < -obstacle.width) obstacle.position.x = random(width, width * 2);
+    //use -obstacle.width to make sure the obstacle is off the screen before you randomly place it on the screen.
+    //could also move to the right of the screen to make it more realistic to appear.
 
     //player slides because chaning velocity. could do something where set velocity if mouse is currently pressed and would look less slidery (but be a consistent and not accelerating walk speed).
 

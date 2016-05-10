@@ -70,8 +70,12 @@ function draw() {
     //Changed to use arrows instead of a and d
     if (keyDown(LEFT_ARROW)) {
         player.velocity.x -= speed;
+        player.changeAnimation("walk");
     } else if (keyDown(RIGHT_ARROW)) {
         player.velocity.x += speed;
+        player.changeAnimation("walk");
+    } else {
+        player.changeAnimation("stand");
     }
 
     player.velocity.y += gravity;

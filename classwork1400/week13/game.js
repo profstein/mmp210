@@ -11,8 +11,8 @@ var player_walk_sprites,
 
 
 var gravity = 1;
-var platform;
-var obstacle;
+var platform, ground;
+var obstacle, fire;
 
 function preload() {
     player_walk_sprites = loadSpriteSheet("player.png", 64, 64, 8); //tells p5.play where the image is and what size the individual sprites are 64x64 and how many sprites, 8
@@ -22,6 +22,8 @@ function preload() {
     player_stand_sprites = loadSpriteSheet("player.png", 64, 64, 1);
     player_stand = loadAnimation(player_stand_sprites);
 
+    fire = loadImage("Obstacle.png");
+    ground = loadImage("Platform.png");
 }
 
 function setup() {
@@ -32,11 +34,19 @@ function setup() {
     player.addAnimation("stand", player_stand);
     //lose collider because when don't use default sprite the collider doesn't work without further setup
 
-    player.setCollider("circle", 0, 0, 32, 32); //set to 32 because using radius (half of 64)
+    player.setCollider("circle", 0, 0, 32, 32); //set to 32 because using radius (half of 64), may need to go smaller depending on actual dimensions in drawing.
     player.debug = true; //will show the collider circle
 
     platform = createSprite(width / 2, height, 10000, 20); //made the width 10000 so won't "fall off"
+    platform.addImage(ground);
+    platform.debug = true;
+    platform.setCollider("rectangle", 0, 0, 10000, 10);
+
+
     obstacle = createSprite(300, height, 60, 80);
+    obstacle.addImage(fire);
+    obstacle.setCollider("rectangle", 0, 0, 64, 100);
+    obstacle.debug = true;
 }
 
 function draw() {
@@ -77,6 +87,9 @@ function draw() {
     } else {
         player.changeAnimation("stand");
     }
+
+    //player slides because chaning velocity. could do something where set velocity if mouse is currently pressed and would look less slidery (but be a consistent and not accelerating walk speed).
+
 
     player.velocity.y += gravity;
     //detect collision after gravity in draw
